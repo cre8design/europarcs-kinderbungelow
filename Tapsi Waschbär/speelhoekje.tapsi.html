@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tapsi de Wasbeer</title>
+	<link rel="stylesheet" href="css/speelhoekje.tapsi.css" >
+</head>
+
+<body bgcolor="#CEECF6">
+	<div class="page__container">
+	  <div class="Logos">
+		<img src="assets/Logo_CRE8_black.svg" class="Logocre8" alt="Cre8Logo" width="4%" >
+		<img src="assets/logo_Europarcs.svg" class="LogoEuro" alt="EuroparcsLogo" width="8%" >
+	  </div>
+	   <img src="assets/waschbär.svg" class="waschbär" alt="Wasbeer" width="12%" >
+		<div class="headline">
+	      <h1>Dit is Tapsi en ze houdt van verstoppertje spelen.<br> Kun jij ontdekken hoe vaak ze zich verstopt tussen haar vrienden?</h1>
+		</div>
+		<img src="assets/suchspiel.jpg" class="Suchspiel" alt="Zoek spel" width="70%" >
+	
+		<form>
+           <label for="frage"><h4>En hoeveel Tapsis heb je geteld?</h4></label>
+           <input type="number" id="number" name="amount" value="1" min="1" max="15"/>
+           <button type="button" onclick="myFunction()">OK</button>
+			<div class="mädchen">
+		      <img src="assets/Child_no.svg" id="child.no" alt="Verkeerd" width="20%" style="display: none">
+		      <img src="assets/Child_yes.svg" id="child.yes" alt="Juist" width="20%" style="display: none">
+			</div>
+		</form>
+		
+          <script> 
+          function myFunction() {
+			  let inputElement = document.getElementById("number")
+			  let childYes = document.getElementById("child.yes");
+			  let childNo = document.getElementById("child.no");
+
+			  let target = 9;
+			  let value = inputElement.value;
+			  let isCorrect = 9 == value;
+			  
+			  if (isCorrect) {
+				  childNo.style.display = "none";
+				  childYes.style.display = "block";
+			  } else {
+				  childNo.style.display = "block";
+				  childYes.style.display = "none";
+			  }
+		  }
+          </script>
+		
+		<div class="wiese">
+		 <img src="assets/Wiese mit Waldtieren.svg" alt="Weiland met bosdieren" width="100%" height="100%">
+		  <p1 style="font-size:2vw;">Bruno</p1>
+		  <p2 style="font-size:2vw;">Tapsi</p2>
+		  <p3 style="font-size:2vw;">Nick</p3>
+		  <p4 style="font-size:2vw;">Evie</p4>
+		  <p5 style="font-size:2vw;">Hazel</p5>
+		  <p6 style="font-size:2vw;">Finn</p6>
+		</div>
+	</div>
+</body>
+</html>
