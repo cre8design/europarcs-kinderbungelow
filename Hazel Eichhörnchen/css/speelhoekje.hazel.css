@@ -133,7 +133,7 @@ p3 {
 
 p4 {
   position: absolute;
-  bottom: 3%;
+  bottom: 4%;
   left: 33%;
 }
 
@@ -147,4 +147,10 @@ p6 {
   position: absolute;
   bottom: 27%;
   left: 90%;
+}
+
+p7 {
+  position: absolute;
+  left: 32%;
+  padding: 0.5%;
 }

@@ -77,6 +77,12 @@ h1 {
 	padding: 0% 10%;
 }
 
+.fuchsbasteln {
+	display: block;
+	margin: 0 auto;
+	border-radius: 5vw;
+}
+
 .wiese {
 	width: 100%;
     position: relative;
@@ -106,7 +112,7 @@ p3 {
 
 p4 {
   position: absolute;
-  bottom: 3%;
+  bottom: 4%;
   left: 33%;
 }
 
@@ -120,4 +126,10 @@ p6 {
   position: absolute;
   bottom: 27%;
   left: 90%;
+}
+
+p7 {
+  position: absolute;
+  left: 32%;
+  padding: 0.5%;
 }
